@@ -1,12 +1,18 @@
 <h1 align="center">
-My hero is:	<span style="color: #FF3333;">{{hero.name}}</span>
+This is me :
+</h1>
+<img src="/src/assets/images/GoodGirl.jpg">
+<h1 align="center">
+	My name is :	<span style="color: #FF3366;">{{hero.name}}</span>
 </h1>
 <h2 align="center">
+	<p style="color: #FF0066;">I'm so cute!</p>
 	My skill are:	
-	<p *ngFor="let skill of hero.skills">
-		<span style="color: #FF3366;">{{skill}}</span>
-	</p>
+	<span *ngFor="let skill of hero.skills">
+		<span style="color: #FF3366; margin-left: 10px;">{{skill}}</span>
+	</span>
 </h2>
 <p align="center">
 	Hero name: <input type="text" [(ngModel)]="hero.name">
 </p>
+

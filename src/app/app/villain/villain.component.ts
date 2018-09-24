@@ -10,8 +10,8 @@ export class VillainComponent implements OnInit {
 	villain: Villain;
   constructor() { 
 	  this.villain = new Villain();
-	  this.villain.name = 'Bad Man';
-	  this.villain.skills = ['abc', 'def'];
+	  this.villain.name = 'Bad Boy';
+    this.villain.skills = ['Bullying', 'Violence'];
   }
 
   ngOnInit() {
