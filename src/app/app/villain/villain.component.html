@@ -1,0 +1,18 @@
+<h1 align="center">
+This is my villain :
+</h1>
+<img src="/src/assets/images/BadBoy.jpg">
+<h1 align="center">
+His name is :	<span style="color: #000099;">{{villain.name}}</span>
+</h1>
+<h2 align="center">
+	<p style="color: #004400;">He is so bad!</p>
+	His skill are:	
+		<span  *ngFor="let skill of villain.skills">
+		<span style="color: #770000; margin-left: 10px; ">{{skill}}</span>
+		</span>
+	
+</h2>
+<p align="center">
+	Villain name: <input type="text" [(ngModel)]="villain.name">
+</p>
