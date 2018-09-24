@@ -1,0 +1,12 @@
+<h1 align="center">
+This villain is:	<span style="color: #000099;">{{villain.name}}</span>
+</h1>
+<h2 align="center">
+	His skill are:	
+	<p *ngFor="let skill of villain.skills">
+		<span style="color: #770000;">{{skill}}</span>
+	</p>
+</h2>
+<p align="center">
+	Villain name: <input type="text" [(ngModel)]="villain.name">
+</p>
