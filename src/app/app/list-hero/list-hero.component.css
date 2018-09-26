@@ -1,0 +1,37 @@
+.list-hero{
+  background-color: #008CBA;
+  width: 80px;
+  height: 30px;
+  font-size: 11px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.list-hero:hover{
+  width: 81px;
+  height: 31px;
+  font-size: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+.selected{
+  color: snow;
+}
+.id{
+  margin-right: 5px;
+  text-align: left;
+  float: left;
+}
+.name{
+  font-family: courier;
+}
+.heroes{
+  width: 45%;
+  margin: 10px;
+  float: left;
+}
+.list-detail{
+  width: 45%;
+  margin: 10px;
+  float: right;
+}
