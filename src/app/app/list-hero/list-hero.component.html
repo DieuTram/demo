@@ -1,8 +1,7 @@
 <div class="heroes">
-  <p *ngFor="let hero of listHero "
-     (click) = "onSelect(hero)">
-    <button class="list-hero">
-      <div class="id">{{hero.id}}</div> <span class="name" [class.selected]="hero === selectedHero">{{hero.name}}</span>
+  <p *ngFor="let hero of listHero ">
+    <button class="list-hero" (click) = "onSelect(hero)" [class.selected]="hero === selectedHero">
+      <div class="id">{{hero.id}}</div> <span class="name" >{{hero.name}}</span>
     </button>
   </p>
 </div>

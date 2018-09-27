@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { Villain } from '../entities/villain';
 
 @Component({
@@ -7,7 +7,7 @@ import { Villain } from '../entities/villain';
   styleUrls: ['./villain.component.css']
 })
 export class VillainComponent implements OnInit {
-	villain: Villain;
+  @Input()	villain: Villain;
   constructor() { 
 	  this.villain = new Villain();
 	  this.villain.name = 'Bad Boy';

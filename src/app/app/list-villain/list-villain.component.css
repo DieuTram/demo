@@ -1,5 +1,5 @@
-.list-hero{
-  background-color: #FF99CC;
+.list-villain{
+  background-color: #6699FF;
   width: 80px;
   height: 30px;
   font-size: 11px;
@@ -7,16 +7,16 @@
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-.list-hero:hover{
+.list-villain:hover{
   width: 81px;
   height: 31px;
   font-size: 12px;
-  background-color: #FF3333;
+  background-color: #0000BB;
   color: white;
 }
 .selected{
   color: snow;
-  background-color: #FF3333;
+  background-color: #0000BB;
 }
 .id{
   margin-right: 5px;
@@ -26,13 +26,15 @@
 .name{
   font-family: courier;
 }
-.heroes{
+.villains{
   width: 15%;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   float: left;
 }
 .list-detail{
   width: 75%;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   float: right;
 }
