@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { VillainComponent } from './app/villain/villain.component';
 import { ListHeroComponent } from './app/list-hero/list-hero.component';
 import { ListVillainComponent } from './app/list-villain/list-villain.component';
+import { MessagesComponent } from './app/messages/messages.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ListVillainComponent } from './app/list-villain/list-villain.component'
     HeroesComponent,
     VillainComponent,
     ListHeroComponent,
-    ListVillainComponent
+    ListVillainComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@ export class HeroesComponent implements OnInit {
   constructor() {
 	  this.hero = new Hero();
 	  this.hero.name = 'Good Girl';
-	  this.hero.skills = ['Cute','Cry'];
+	  this.hero.skills = ['Cute', 'Cry'];
   }
 
   ngOnInit() {

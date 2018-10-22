@@ -1,6 +1,6 @@
 <div class="villains">
   <p *ngFor="let villain of listVillain ">
-    <button class="list-villain" (click) = "onSelect(villain)" [class.selected]="villain === selectedVillain">
+    <button class="list-villain" (click) = "onSelect(villain.id)" [class.selected]="villain === selectedVillain">
       <div class="id">{{villain.id}}</div> <span class="name" >{{villain.name}}</span>
     </button>
   </p>

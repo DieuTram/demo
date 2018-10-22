@@ -1,0 +1,12 @@
+<div *ngIf="mgs.length">
+  <div >
+    <h2 >Messages</h2>
+    <button class="btn-clear" (click)="onClear()">Clear</button>
+  </div>
+  <div >
+    <ul *ngFor='let message of mgs'>
+      <li>{{message}}</li>
+    </ul>
+  </div>
+
+</div>

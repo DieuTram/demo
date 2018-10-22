@@ -1,0 +1,19 @@
+.btn-clear{
+  background-color: red;
+  width: 80px;
+  height: 30px;
+  font-size: 11px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float: right;
+}
+.list-message{
+  width: 40%;
+}
+.header-message{
+  width: 50%;
+}
+.title-msg{
+  float: left;
+}
