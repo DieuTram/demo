@@ -9,6 +9,9 @@ import { VillainComponent } from './app/villain/villain.component';
 import { ListHeroComponent } from './app/list-hero/list-hero.component';
 import { ListVillainComponent } from './app/list-villain/list-villain.component';
 import { MessagesComponent } from './app/messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './app/dashboard/dashboard.component';
+import { HttpClientModule }    from '@angular/common/http';
 
 
 @NgModule({
@@ -18,11 +21,14 @@ import { MessagesComponent } from './app/messages/messages.component';
     VillainComponent,
     ListHeroComponent,
     ListVillainComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

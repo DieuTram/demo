@@ -4,15 +4,15 @@
 			<marquee>Welcome to my channel!</marquee>
 		</h1>
 	</div>
-  <div class="hero">
-    <h1 align="center"> Hero </h1>
-    <app-list-hero></app-list-hero>
+  <div>
+    <a routerLink="/dashboard"><h1 align="center"> Trang chủ</h1></a>
+    <button (click)="goBack()"> go back</button>
   </div>
-  <div class="villain">
-    <h1 align="center"> Villain </h1>
-    <app-list-villain></app-list-villain>
-  </div>
-  <div class="message">
+  <router-outlet></router-outlet>
+<!--  <div class="hero">
+    <router-outlet></router-outlet>
+  </div>-->
+ <div class="message">
     <app-messages></app-messages>
   </div>
 </div>

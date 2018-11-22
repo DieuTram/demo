@@ -1,0 +1,28 @@
+.list-hero{
+  width: 45%;
+  margin: 10px;
+  float: left;
+}
+.list-villain{
+  width: 45%;
+  margin: 10px;
+  float: right;
+}
+.btn-list-hero{
+  background-color: pink;
+  width: 80px;
+  height: 30px;
+  font-size: 11px;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float: right;
+}
+.btn-list-villain{
+  background-color: blue;
+  width: 80px;
+  height: 30px;
+  font-size: 11px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}

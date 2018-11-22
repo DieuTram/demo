@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Hero} from '../entities/hero';
+import {ActivatedRoute} from '@angular/router';
+import {HeroService} from '../services/hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -7,14 +9,15 @@ import {Hero} from '../entities/hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-@Input()	hero: Hero;
-  constructor() {
-	  this.hero = new Hero();
-	  this.hero.name = 'Good Girl';
-	  this.hero.skills = ['Cute', 'Cry'];
+  @Input() hero: Hero;
+
+  constructor(private route: ActivatedRoute, private heroService: HeroService) {
+
   }
 
   ngOnInit() {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.heroService.getHeroById(id).subscribe(x => this.hero = x);
   }
 
 }

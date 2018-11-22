@@ -1,8 +1,10 @@
 <div class="villains">
+  <h1 align="center">Villains</h1>
   <p *ngFor="let villain of listVillain ">
-    <button class="list-villain" (click) = "onSelect(villain.id)" [class.selected]="villain === selectedVillain">
+    <button routerLink="/villains/{{villain.id}}" class="list-villain" (click) = "onSelect(villain.id)" [class.selected]="villain === selectedVillain">
       <div class="id">{{villain.id}}</div> <span class="name" >{{villain.name}}</span>
     </button>
+
   </p>
 </div>
 <div class="list-detail">

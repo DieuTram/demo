@@ -1,12 +1,17 @@
-<div class="heroes">
+<!--<div class="heroes">-->
+<div>
+  <h1 align="center"> Heroes </h1>
   <p *ngFor="let hero of listHero ">
-    <button class="list-hero" (click) = "onSelect(hero.id)" [class.selected]="hero === selectedHero">
+    <!--<a routerLink="/heroes/{{hero.id}}"><button class="list-hero" (click) = "onSelect(hero.id)" [class.selected]="hero === selectedHero">
       <div class="id">{{hero.id}}</div> <span class="name" >{{hero.name}}</span>
-    </button>
+    </button></a>-->
+    <a routerLink="/heroes/{{hero.id}}"><button class="list-hero">
+      <div class="id">{{hero.id}}</div> <span class="name" >{{hero.name}}</span>
+    </button></a>
   </p>
 
 </div>
-<div class="list-detail">
+<!--<div class="list-detail">
   <app-heroes [hero]="selectedHero"></app-heroes>
-</div>
+</div>-->
 

@@ -8,18 +8,17 @@ import {MessageService} from '../services/message.service';
 })
 export class MessagesComponent implements OnInit {
 
-  mgs: string[] = [];
 
-  constructor(private messageService: MessageService) {
+  constructor(public messageService: MessageService) {
   }
 
   onClear(): void {
     this.messageService.clear();
-    this.mgs = this.messageService.getListMessages();
+
   }
 
   ngOnInit() {
-    this.mgs = this.messageService.getListMessages();
+
   }
 
 }

@@ -1,15 +1,15 @@
 .list-hero{
   background-color: #FF99CC;
-  width: 80px;
-  height: 30px;
+  width: 100px;
+  height: 40px;
   font-size: 11px;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 .list-hero:hover{
-  width: 81px;
-  height: 31px;
+  width: 101px;
+  height: 41px;
   font-size: 12px;
   background-color: #FF3333;
   color: white;
